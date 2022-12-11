@@ -14,6 +14,7 @@
 I am a first-year student of Belarusian State University of Informatics and Radioelectronics (BSUIR). I started my journey with learning the basics of C.
 Then I became interested in design and the sphere of web-programming. First of all I learned HTML and CSS, I have made some sites with responsive design.
 I have already had experience using Figma and Adobe PhotoShop, also I used to create layout design. Afterwards my choice fell on JavaScript. I am realy keen on it. Besides I would like to mention my algorithm comprehension.
+
 Now I try to improve my skills, abilities and do my best to get a job offer.
 
 ## Skills and Proficiency:
