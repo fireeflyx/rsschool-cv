@@ -2,3 +2,125 @@
     padding: 0;
     margin: 0;
 }
+html{
+    scroll-behavior: smooth; 
+}
+body{
+    color: #252525;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration-color: transparent;
+    color: #252525;
+    transition: 0.5s;
+}
+a:hover{
+    text-decoration-color: #252525;
+}
+.wrapper{
+    border: 1px solid black;
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.nav-list{
+    position: fixed;
+    width: 1024px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #252525;
+    border-bottom: 1px solid #252525;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.25);
+}
+.nav-item{
+    display: inline-block;
+}
+.nav-link{
+    padding: 10px;
+}
+.main-header-photo{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    border-bottom: 1px solid #252525;
+}
+.name{
+    font-size: 60px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+}
+.profession{
+    padding: 5px 10px;
+    background: rgb(143, 146, 151);
+}
+.content{
+    display: flex;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+    background: rgb(143, 146, 151);
+}
+.contacts{
+    display: flex;
+    flex-direction: column;
+    width: 88%;
+}
+h2{
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+}
+.main-content{
+    padding: 0 25px;
+    width: 724px;
+    box-sizing: border-box;
+}
+.about, .education{
+    padding-bottom: 25px;
+}
+.contacts-list, .languages-list{
+    list-style: none;
+}
+.skills-list{
+    padding-left: 30px;
+    list-style: none;
+}
+.languages{
+    display: flex;
+    flex-direction: column;
+    width: 88%;
+}
+.footer{
+    border-top: 1px solid #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background: rgb(143, 146, 151);
+    position: relative;
+}
+.footer-content{
+    text-align: center;
+}
+.rs_school_logo{
+    position: absolute;
+    right: 10px;
+}
