@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans:wght@500&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+    <header>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="#langueges" class="nav-link">Langueges</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <header class="main-header-photo">
+            <img src="images/photo.webp" alt="photo" class="photo" width="300">
+            <div class="info">
+                <h1 class="name">Pavel Dubrovskiy</h1>
+                <p class="profession">Front-end Developer</p>
+            </div>
+        </header>
+        <div class="content">
+            <aside class="sidebar">
+                <section class="contacts" id="contacts">
+                    <h2 class="header-2">Contacts</h2>
+                    <ul class="contacts-list">
+                        <li class="contacts-item">Phone: +375(33)383-36-60</li>
+                        <li class="contacts-item">Email: paveldubrovskiyit@gmail.com</li>
+                        <li class="contacts-item">Telegram: @pavel_dubrovskiy</li>
+                        <li class="contacts-item"><a href="https://www.linkedin.com/in/pavel-dubrovskiy-39b296255">Linkedin</a></li>
+                    </ul>
+                </section>
+                <section class="languages" id="langueges">
+                    <h2 class="header-2">Langueges</h2>
+                    <ul class="languages-list">
+                        <li class="languages-item">Russian - Native</li>
+                        <li class="languages-item">English - Intermediate (B1) (stydy in <a href="https://str.by/">streamline</a>)</li>
+                    </ul>
+                </section>
+            </aside>
+            <div class="main-content">
+                <section class="about" id="about">
+                <h2>About Myself:</h2>
+                <p class="description">I am a first-year student of Belarusian State University of Informatics and Radioelectronics (BSUIR). I started my journey with learning the basics of C.
+                    Then I became interested in design and the sphere of web-programming. First of all I learned HTML and CSS, I have made some sites with responsive design.
+                    I have already had experience using Figma and Adobe PhotoShop, also I used to create layout design. Afterwards my choice fell on JavaScript. I am realy keen on it. Besides I would like to mention my algorithm comprehension.
+                    Now I try to improve my skills, abilities and do my best to get a job offer.
+                </p>
+                </section>
+                <section class="skills" id="skills">
+                    <h2>Skills and Proficiency:</h2>
+                    <ul class="skills-list">
+                        <li class="skills-item">HTML5, CSS3</li>
+                        <li class="skills-item">JavaScript(Basics)</li>
+                        <li class="skills-item">Git, GitHub</li>
+                        <li class="skills-item">Figma, PhotoShop</li>
+                        <li class="skills-item">Algorithms</li>
+                        <li class="skills-item">CMS(WordPress)</li>
+                    </ul>
+                </section>
+                <section class="code" id="code">
+                    <h2>Code example:</h2>
+                    <p class="description">This is my solution of <a href="https://www.codewars.com/kata/51c8e37cee245da6b40000bd">KATA (codewars)</a>:</p>
+                    <pre>
+
+function solution(input, markers) {
+  let arr = input.split("\n");
+  return arr.map(item => {
+    if(item.includes(markers[0]) || item.includes(markers[1])){
+      let delete_index = item.includes(markers[0]) ? 
+       item.indexOf(markers[0]) : item.indexOf(markers[1]);
+      return item.slice(0, --delete_index);
+    }    
+    return item;
+  }).join("\n");
+};
+                    </pre>
+                </section>
+                <section class="education" id="education">
+                    <h2>Education:</h2>
+                    <ul class="education-list">
+                        <li class="education-item">HTML and CSS Tutorials on the <a href="https://webref.ru">webref</a></li>
+                        <li class="education-item">JavaScript Manual on <a href="https://learn.javascript.ru">learnjavascript.ru</a> (in progress)</li>
+                        <li class="education-item">RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)</li>
+                        <li class="education-item"><a href="https://www.bsuir.by/en/">BSUIR</a> FIS (2022-2026)</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="https://github.com/fireeflyx">fireeflyx</a>
+            <p class="year">2022</p>
+        </div>
+        <a href="https://rs.school/js-stage0/" class="rs_school_logo"><img src="images/rs_school_js.svg" alt="rs_school_ls logo" width="70"></a>
+    </footer>
+    </div>
+</body>
+</html>
