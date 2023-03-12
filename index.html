@@ -82,10 +82,10 @@ function solution(input, markers) {
   let arr = input.split("\n");
   return arr.map(item =&gt; {
     if(item.includes(markers[0]) || item.includes(markers[1])){
-      let delete_index = item.includes(markers[0]) ? 
+      let delete_index = item.includes(markers[0]) ?
        item.indexOf(markers[0]) : item.indexOf(markers[1]);
       return item.slice(0, --delete_index);
-    }    
+    }
     return item;
   }).join("\n");
 };
